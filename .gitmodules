@@ -1,0 +1,10 @@
+[submodule "modules/dotly"]
+	path = modules/dotly
+	url = https://github.com/CodelyTV/dotly.git
+	branch = master
+[submodule "modules/powerlevel10k"]
+	path = modules/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "modules/oh-my-zsh"]
+	path = modules/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh

@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Radical",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--config=${workspaceFolder}/.golangci.yml",
+        "--fast",
+        "--fix"
+    ],
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.formatTool": "gofumpt",
+    "editor.minimap.enabled": false,
+    "go.lintOnSave": "workspace"
+}
