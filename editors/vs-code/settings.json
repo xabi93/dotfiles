@@ -1,0 +1,54 @@
+{
+    // Editor global setup
+    "workbench.colorTheme": "Nord",
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "SourceCodePro-regular",
+    "editor.minimap.enabled": false,
+    "files.insertFinalNewline": true,
+    "editor.accessibilitySupport": "on",
+    "editor.inlineSuggest.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.bracketPairColorization.enabled": true,
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    // Golang
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--config=${workspaceFolder}/.golangci.yaml",
+        "--fast",
+        "--fix"
+    ],
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.formatTool": "gofumpt",
+    "go.toolsManagement.autoUpdate": true,
+    "go.lintOnSave": "workspace",
+    "go.autocompleteUnimportedPackages": true,
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+    
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "env": false
+    },
+
+    "terraform.languageServer": {
+        "external": true,
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.mac": "/Users/gopher/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path.mac": "/Users/gopher/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path.mac": "/Users/gopher/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "editor.fontSize": 14,
+}
