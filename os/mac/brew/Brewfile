@@ -18,5 +18,6 @@ cask "whatsapp"
 cask "bitwarden"
 cask "flycut"
 cask "lens"
+cask "keybase"
 mas "xcode", id: 497799835
 mas "Magnet", id: 441258766
