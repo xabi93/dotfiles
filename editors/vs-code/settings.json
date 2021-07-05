@@ -1,14 +1,44 @@
 {
-    "workbench.colorTheme": "Radical",
+    "workbench.colorTheme": "Nord",
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
         "--config=${workspaceFolder}/.golangci.yml",
         "--fast",
         "--fix"
     ],
+    "editor.fontFamily": "SourceCodePro-medium",
     "go.coverOnSingleTest": true,
     "go.coverOnSingleTestFile": true,
     "go.formatTool": "gofumpt",
     "editor.minimap.enabled": false,
-    "go.lintOnSave": "workspace"
+    "go.lintOnSave": "workspace",
+    "redhat.telemetry.enabled": false,
+    "files.insertFinalNewline": true,
+    "editor.accessibilitySupport": "on",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.autocompleteUnimportedPackages": true,
+    "editor.inlineSuggest.enabled": true,
+    // "github.copilot.enable": {
+    
+    //     "*": true,
+    //     "yaml": true,
+    //     "plaintext": false,
+    //     "markdown": true
+    // },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.startupEditor": "none",
+    "terraform.languageServer": {
+        "external": true,
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
 }

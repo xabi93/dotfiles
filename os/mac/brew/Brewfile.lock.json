@@ -299,6 +299,64 @@
             }
           }
         }
+      },
+      "awscli": {
+        "version": "2.2.16",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_big_sur": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:2872f7f7418ca758ad0c19db96e36d4aff3cde4ae753ddbadd301423990b4bc9",
+              "sha256": "2872f7f7418ca758ad0c19db96e36d4aff3cde4ae753ddbadd301423990b4bc9"
+            },
+            "big_sur": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:3ad43b7858b182cc2fde4c7e271384dbee08af1f2ca06d42c4eac400f49a3e44",
+              "sha256": "3ad43b7858b182cc2fde4c7e271384dbee08af1f2ca06d42c4eac400f49a3e44"
+            },
+            "catalina": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:e826e049f9df3dd757ddec0cfbbe8e00a64512a916cc7b1814be1ef5dce00c98",
+              "sha256": "e826e049f9df3dd757ddec0cfbbe8e00a64512a916cc7b1814be1ef5dce00c98"
+            },
+            "mojave": {
+              "cellar": "/usr/local/Cellar",
+              "url": "https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:11849f691161039c53129f74c4e2c11eab40ba105160742fd0314111f706f0d8",
+              "sha256": "11849f691161039c53129f74c4e2c11eab40ba105160742fd0314111f706f0d8"
+            }
+          }
+        }
+      },
+      "k9s": {
+        "version": "0.24.13",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:2e72e54cb4dd65af4c1eaf8064eeef7d7ce901f7daeb87ff68196a88d92b12e4",
+              "sha256": "2e72e54cb4dd65af4c1eaf8064eeef7d7ce901f7daeb87ff68196a88d92b12e4"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:af4f08986d4607d556d3cf949560a03392fc414c113a84633d25ce3c611d7f1b",
+              "sha256": "af4f08986d4607d556d3cf949560a03392fc414c113a84633d25ce3c611d7f1b"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:27257b241576ac686c2ab97b5fee6e989bb68782171d5ca947f2ab63bb280354",
+              "sha256": "27257b241576ac686c2ab97b5fee6e989bb68782171d5ca947f2ab63bb280354"
+            },
+            "mojave": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:81863151fa824dbc4f31eeb81ef8021a41f6f1605fce6d7e7ae884e5a57bd7cf",
+              "sha256": "81863151fa824dbc4f31eeb81ef8021a41f6f1605fce6d7e7ae884e5a57bd7cf"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -363,7 +421,7 @@
         }
       },
       "lens": {
-        "version": "5.0.0-latest.20210629.3",
+        "version": "5.0.1",
         "options": {
           "full_name": "lens"
         }
@@ -379,6 +437,24 @@
         "options": {
           "full_name": "google-chrome"
         }
+      },
+      "pritunl": {
+        "version": "1.2.2799.2",
+        "options": {
+          "full_name": "pritunl"
+        }
+      },
+      "onyx": {
+        "version": "3.9.7",
+        "options": {
+          "full_name": "onyx"
+        }
+      },
+      "insomnia": {
+        "version": "2021.4.0",
+        "options": {
+          "full_name": "insomnia"
+        }
       }
     },
     "mas": {
@@ -392,9 +468,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.2.0",
+        "HOMEBREW_VERSION": "3.2.1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "33523594399881ade58e6faf178614cf8c2486b8",
+        "Homebrew/homebrew-core": "93c5049a425ad80d88b93efe6539e875c210b259",
         "CLT": "12.5.0.22.11",
         "Xcode": "12.5.1",
         "macOS": "11.4"

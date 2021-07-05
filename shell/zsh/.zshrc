@@ -9,8 +9,8 @@ plugins=(
   git
   osx
   golang
-  rbenv
-  ruby
+  fnm
+  kubectl
 )
 
 source "$DOTFILES_PATH/modules/oh-my-zsh/oh-my-zsh.sh"
@@ -37,6 +37,11 @@ fpath=("$DOTFILES_PATH/shell/zsh/themes" "$DOTFILES_PATH/shell/zsh/autocompletio
 
 autoload -Uz promptinit && promptinit
 prompt ${DOTLY_THEME:-codely}
+
+eval "$(fnm env)"
+
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 source "$DOTLY_PATH/shell/zsh/bindings/dot.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
