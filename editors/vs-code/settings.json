@@ -40,5 +40,5 @@
         ],
         "maxNumberOfProblems": 100,
         "trace.server": "off"
-    },
+    }
 }

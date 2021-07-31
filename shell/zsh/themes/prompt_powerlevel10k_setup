@@ -1,6 +1,0 @@
-#!/usr/bin/env zsh
-
-source "$DOTFILES_PATH/modules/powerlevel10k/powerlevel10k.zsh-theme"
-
-
-[[ ! -f $DOTFILES_PATH/shell/zsh/themes/.p10k.zsh ]] || source $DOTFILES_PATH/shell/zsh/themes/.p10k.zsh

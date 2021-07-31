@@ -1,0 +1,35 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~"]
+
+- shell:
+    - command: test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      description: Installing ohmyzsh
+
+    - command: which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      description: Installing homebrew
+
+    - command: brew bundle --file brew/Brewfile
+      description: Installing brew packages
+      stdout: true
+    
+    - command: defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/mac/iTerm2" && defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+      description: Setup custom iterm
+
+- link:
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.gitattributes: git/.gitattributes
+    ~/.p10k.zsh: shell/zsh/themes/.p10k.zsh
+    ~/.zshenv: shell/zsh/.zshenv
+    ~/.zshrc: shell/zsh/.zshrc
+    ~/.inputrc: shell/.inputrc
+    ~/Library/Application\ Support/Code/User/settings.json: editors/vs-code/settings.json
+    ~/Library/Application\ Support/Code/User/keybindings.json: editors/vs-code/keybindings.json
+
+- create:
+    - ~/Projects
