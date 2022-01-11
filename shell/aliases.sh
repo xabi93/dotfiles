@@ -16,5 +16,3 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 
 alias cmf='git-cmf'
-
-unalias ksd

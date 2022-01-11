@@ -1293,7 +1293,7 @@
         }
       },
       "keybase": {
-        "version": "5.8.0,20210920184218:ac2177aec7",
+        "version": "5.8.0,20210920184218,ac2177aec7",
         "options": {
           "full_name": "keybase"
         }
@@ -1392,19 +1392,19 @@
         "revision": "dfcae9f172aad22bd358f7687496936a401cde5f"
       },
       "homebrew/bundle": {
-        "revision": "d78bc465ca28fb16166c676b96ee60198957c1fe"
+        "revision": "ca598bfea38d2a0e0316662807d58fca18169e22"
       },
       "homebrew/cask": {
-        "revision": "b693410726671af16c94f0af137be037e867ec2e"
+        "revision": "1fed44e89a8896f27e2b69a5789a3cd916d7abe5"
       },
       "homebrew/cask-fonts": {
         "revision": "dc49e99490709e5032425fd44ac49b1b4f3d1f2b"
       },
       "homebrew/cask-versions": {
-        "revision": "2e163e1a06d9203f6bafb96dd53242c13e89f7a3"
+        "revision": "f30a3d70b4407290960efa555646d2ae0394f795"
       },
       "homebrew/core": {
-        "revision": "8606fa303093a4242f404edff6b34bf184670c17"
+        "revision": "31b9d0ebe990d421c6323a81b778df6938cfd9a7"
       },
       "mfuentesg/tap": {
         "revision": "4a5287e9a1dda0540cfe6dcc1713ddca875cf797"
@@ -1430,7 +1430,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "8606fa303093a4242f404edff6b34bf184670c17",
+        "Homebrew/homebrew-core": "31b9d0ebe990d421c6323a81b778df6938cfd9a7",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.1",
         "macOS": "12.0.1"

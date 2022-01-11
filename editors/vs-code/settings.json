@@ -5,7 +5,7 @@
     "editor.fontFamily": "SourceCodePro-regular",
     "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
-    "editor.accessibilitySupport": "on",
+    "editor.accessibilitySupport": "off",
     "editor.inlineSuggest.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.bracketPairColorization.enabled": true,
@@ -24,11 +24,14 @@
     "go.toolsManagement.autoUpdate": true,
     "go.lintOnSave": "workspace",
     "go.autocompleteUnimportedPackages": true,
+    "gopls": {
+        "formatting.gofumpt": true,
+        "ui.navigation.importShortcut": "Definition",
+    },
     "redhat.telemetry.enabled": false,
     "github.copilot.enable": {
-    
         "*": true,
-        "yaml": false,
+        "yaml": true,
         "plaintext": false,
         "markdown": false,
         "env": false
@@ -51,4 +54,9 @@
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
     "editor.fontSize": 14,
+    "[vue]": {
+        "editor.defaultFormatter": "johnsoncodehk.volar"
+    },
+    "turboConsoleLog.quote": "'",
+    "cSpell.language": "en-GB",
 }
