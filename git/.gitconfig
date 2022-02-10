@@ -99,3 +99,5 @@
         insteadOf = https://gitlab.com/
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
+[http]
+	cookiefile = /Users/gopher/.gitcookies

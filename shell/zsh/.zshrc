@@ -1,6 +1,19 @@
 source $(brew --prefix)/opt/antigen/share/antigen/antigen.zsh
 
-antigen use oh-my-zsh
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
+
+  #### FIG ENV VARIABLES ####
+  [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+  ### END FIG ENV VARIABLES ####
+
+  antigen use oh-my-zsh
+  # Syntax highlighting bundle.
+  antigen bundle zsh-users/zsh-syntax-highlighting
+  antigen bundle zsh-users/zsh-autosuggestions
+
+##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
+fi
 
 antigen bundle git
 antigen bundle osx
@@ -11,24 +24,9 @@ antigen bundle aws
 antigen bundle gcloud
 antigen bundle command-not-found
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
-
-# Setup theme
-# source ~/.p10k.zsh
-# antigen theme romkatv/powerlevel10k
-
 antigen apply
 
 autoload -U add-zsh-hook
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
 
 # ZSH Ops
 setopt HIST_IGNORE_ALL_DUPS
@@ -61,4 +59,12 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+
 eval "$(starship init zsh)"
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+fi

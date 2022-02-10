@@ -10,7 +10,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.bracketPairColorization.enabled": true,
     "git.autofetch": true,
-    "window.zoomLevel": 0,
     // Golang
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
@@ -59,4 +58,7 @@
     },
     "turboConsoleLog.quote": "'",
     "cSpell.language": "en-GB",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    }
 }
