@@ -1,5 +1,3 @@
-source $(brew --prefix)/opt/antigen/share/antigen/antigen.zsh
-
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
 ##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
 
@@ -7,14 +5,15 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
   ### END FIG ENV VARIABLES ####
 
-  antigen use oh-my-zsh
-  # Syntax highlighting bundle.
-  antigen bundle zsh-users/zsh-syntax-highlighting
-  antigen bundle zsh-users/zsh-autosuggestions
-
 ##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
 fi
 
+source $(brew --prefix)/opt/antigen/share/antigen/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle git
 antigen bundle osx
 antigen bundle golang
@@ -41,8 +40,6 @@ ZSH_HIGHLIGHT_MAXLENGTH=300
 source "$DOTFILES_PATH/shell/init.sh"
 
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
@@ -61,10 +58,12 @@ load-nvmrc
 
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
 
-eval "$(starship init zsh)"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
 fi
+
+eval "$(starship init zsh)"
