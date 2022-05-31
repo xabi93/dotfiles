@@ -1,6 +1,6 @@
 {
     // Editor global setup
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Halcyon",
     "workbench.startupEditor": "none",
     "editor.fontFamily": "SourceCodePro-regular",
     "editor.minimap.enabled": false,
@@ -60,5 +60,6 @@
     "cSpell.language": "en-GB",
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
-    }
+    },
+    "explorer.fileNesting.enabled": true
 }
